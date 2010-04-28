@@ -1,0 +1,27 @@
+body { font-size: 87.5%; }
+a:active, a:visited, a { color: #1193F6; text-decoration: none; }
+a:hover { color: #1193F6 !important; text-decoration: underline; }
+h1 a, h1 a:link, h1 a:visited { text-decoration: none; color: #222; }
+
+#container { width: 960px; margin: auto; }
+
+#header #logo { font-size: 4em; }
+#header #logo a, 
+#header #logo a:link, 
+#header #logo a:visited { text-decoration: none; color: #222; }
+
+#sidebar              { border-left: 2px solid #CFCFCF; }
+#sidebar .avatar      { width: 66px; height: 66px; border: 1px solid #CFCFCF; box-shadow:0 2px 4px #999999; -moz-box-shadow:0 2px 4px #999999; -webkit-box-shadow:0 2px 4px #999999; }
+#sidebar .avatar img  { width:60px; height:60px; border:3px solid #FFFFFF; }
+
+#sidebar .info { font-size: 90%; }
+#sidebar dl { color: #bbb; }
+#sidebar dl dt { float: left; text-align: right; width: 10px; }
+#sidebar dl dt a { color: #bbb; }
+#sidebar dl dd { margin-left: 68px; }
+
+/* Post Container */
+.post .post-date p      { color: #CFCFCF; text-align: center; }
+.post .post-date .day   { display: block; font-size: 150%; }
+.post .post-date .month { display: block; line-height: 0; }
+/* End */

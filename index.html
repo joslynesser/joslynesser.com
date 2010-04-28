@@ -1,1 +1,17 @@
-Future home of joslynesser.com
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+  <div class="post">
+    <div class="post-date span-1">
+      <p>{{ post.date | date: "<span class='day'>%d</span><span class='month'>%b</span>" }}</p>
+    </div>
+    <div class"post-title span-16 last">
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    </div>
+    <div class="post-body prepend-1">
+      {{ post.content}}
+    </div>
+  </div>
+{% endfor %}

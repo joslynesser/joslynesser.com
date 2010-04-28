@@ -1,0 +1,19 @@
+{% include header.html %}      
+  <div id="content" class="span-17">
+    <div class="span-17 last">
+      {{ content }}
+    </div>
+    
+    <div class="span-17 last">
+      <h3>Related Posts</h3>
+      <ul class="posts">
+        {% for post in site.related_posts limit:3 %}
+          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div id="sidebar" class="prepend-1 span-6 last">
+    {% include sidebar.html %}
+  </div>
+{% include footer.html %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <title>
+       {% if page.title %}
+         {{ page.title }} &mdash;
+       {% endif %}
+       Joslyn Esser
+     </title>
+     <meta name="author" content="Joslyn Esser" />
+     {% if page.summary %}
+       <meta namne="description" content="{{ page.summary }}" />
+     {% endif %}
+
+     <link rel="stylesheet" href="assets/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
+     <link rel="stylesheet" href="assets/stylesheets/blueprint/print.css" type="text/css" media="print">
+     <!--[if lt IE 8]>
+       <link rel="stylesheet" href="assets/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection">
+     <![endif]-->
+     
+     <link rel="stylesheet" href="assets/stylesheets/public.css" type="text/css" media="screen, projection" />
+  </head>
+  <body>
+    <a href="http://github.com/joslynesser"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+
+    <div id="container">
+      <div id="header" class="append-bottom span-24 last">
+        <div id="logo">
+          <a href="/">Joslyn Esser</a>
+        </div>
+      </div>
