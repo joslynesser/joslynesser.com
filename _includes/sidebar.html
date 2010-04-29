@@ -22,3 +22,13 @@
     </dd>
   </dl>
 </div>
+<div class="recent prepend-top span-6 last">
+  <h3>Latest Posts</h3>
+  <dl>
+    {% for post in site.posts limit:10 %}
+      <dt>{{ post.date | date: "%d %b" }}</dt>
+      <dd><a href="{{ post.url }}">{{ post.title }}</dd>
+    {% endfor %}
+  </dl>
+</div>
+      
